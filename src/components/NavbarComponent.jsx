@@ -8,7 +8,7 @@ const NavbarComponent = () => {
             <div class="absolute z-50 h-screen w-full">
                 <nav class="aborder-gray-200">        
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30">
-                        <a href="#" class="flex items-center space-x-56 rtl:space-x-reverse">
+                        <a href="/" class="flex items-center space-x-56 rtl:space-x-reverse">
                             <Image src={image}></Image>
                         </a>
                         <div class="hidden w-full md:block md:w-auto" id="navbar-default">

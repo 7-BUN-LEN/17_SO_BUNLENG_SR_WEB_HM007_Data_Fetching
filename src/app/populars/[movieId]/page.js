@@ -11,8 +11,13 @@ const MovicDetails = async({params}) => {
     for(let i = 0; i<Math.ceil(rating/2); i++){
         star.push(i);
     }
+
+
+    const postedAt = getMovieId.payload.posted_at;
+    const postedDate = new Date(postedAt);
+    const format = `${postedDate.toDateString()} ${postedDate.toLocaleTimeString()}`
   return (
-    <div className="bg-gradient-to-r from-rose-950 to-pink-950 overflow-auto pt-20">
+    <div className="bg-gradient-to-r h-screen from-rose-950 to-pink-950 overflow-auto pt-20">
       <div>
         <div className="py-8">
           <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +60,7 @@ const MovicDetails = async({params}) => {
                   </div>
                 </div>
                 <div className="mb-4 text-white mt-5">
-                  <p> {getMovieId.payload.posted_at} </p>
+                  <p> {format} </p>
                 </div>
               </div>
             </div>
