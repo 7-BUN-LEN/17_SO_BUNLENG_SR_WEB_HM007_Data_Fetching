@@ -24,11 +24,10 @@ async function CardCom({movieData}) {
                            <img src= {items.image==""?" https://m.ykimg.com/05350000649264B71427220BB938EDB4":items.image} class="shadow border" alt={items.movie_title}/>
                         </Link>
                         <div class="mt-4">
-                                 <h4 class="font-bold text-xl line-clamp-1"> {items.movie_title} </h4>
-                                 <p class="mt-2 text-gray-600 line-clamp-2"> {items.description}
-                                 </p>
-                           </div>
-                       
+                              <h4 class="font-bold text-xl line-clamp-1"> {items.movie_title} </h4>
+                              <p class="mt-2 text-gray-600 line-clamp-2"> {items.description}
+                              </p>
+                        </div>
                     </div>
                  </div>
               </CarouselItem>
